@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <META HTTP-EQUIV="pragma" CONTENT="no-cache">
+  <META HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate">
+  <META HTTP-EQUIV="expires" CONTENT="0">
+  <title></title>
+  <style>
+    html,
+    body {
+      background: #FAEBD7;
+      overflow: hidden;
+    }
+
+    #main {
+      width: 100vw;
+      height: 100vh;
+
+    }
+
+    #add {
+      position: fixed;
+      width: 30%;
+      left: 35%;
+      top: 3em;
+      cursor: pointer;
+    }
+
+    .item {
+      width:100px;
+      text-align: center;
+      position: fixed;
+      background-color: #ffc080;
+      z-index: 10;
+    }
+    .item ol{
+      list-style: none;
+      margin: 0;
+      padding: 3px;
+    }
+    .item li{
+      display: block;
+    }
+
+    .key {
+      cursor: move;
+      user-select: none;
+    }
+
+    .place_sign {
+      width:100px;
+      position: fixed;
+      border:  solid #ffc080 1px;
+      z-index: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="main">
+
+
+  </div>
+  <div class="place_sign" id="place_sign"></div>
+  <div id="add" ><input type="text"/><button onclick="Add()">+</button></div>
+  <script src="main.js"></script>
+</body>
+
+</html>
